@@ -62,3 +62,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'kaminari'
+
+# 画像投稿用のgem
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+
+# サイズ調整などの画像加工を行うgem
+gem "refile-mini_magick"
