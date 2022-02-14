@@ -1,3 +1,54 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title {
+  font-family: cursive;
+}
+
+sub-title {
+  font-family: serif;
+}
+
+.cover {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-image: url(/assets/training1.jpg);
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: 100% 100%;
+}
+
+.text-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-weight: 100;
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+  }
+  
+  .cover-new {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/training2.jpg);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+  }
+  
+  .form-label {
+    background: linear-gradient(transparent 80%, #727171 50%);
+    font-size: 25px;
+  }
+  
+  .form-group {
+    width: 600px;
+  }
+  

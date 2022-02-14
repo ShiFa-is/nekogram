@@ -68,3 +68,8 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 
 # サイズ調整などの画像加工を行うgem
 gem "refile-mini_magick"
+
+gem 'bootstrap', '~> 4.5'
+gem 'jquery-rails'
+
+gem 'devise'
