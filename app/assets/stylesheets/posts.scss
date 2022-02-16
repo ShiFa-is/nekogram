@@ -70,3 +70,13 @@
   .current {
     font-weight: bold;
   }
+
+  //コメントのレイアウト
+  .comments-index {
+    background-color: #fff;
+    border: 1px #000 solid;
+  }
+  
+  .comment-delete {
+    margin-left: auto;
+  }
