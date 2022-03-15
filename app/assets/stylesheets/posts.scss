@@ -6,7 +6,7 @@
 .cover-index {
     height: 100%;
     width: 100%;
-    background-image: url(/assets/training3.jpg);
+    background-image: url(/assets/show.jpg); /*投稿一覧 */
     background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode: lighten;
     background-size: 100% 100%;
@@ -14,10 +14,6 @@
   
   .one-post {
     margin: 5px 30px;
-  }
-  
-  .one-post img:hover {
-    transform: scale(1.2,1.2);
   }
   
   .caption {
@@ -79,4 +75,67 @@
   
   .comment-delete {
     margin-left: auto;
+  }
+
+  .title {
+    font-family: cursive;
+  }
+  
+  sub-title {
+    font-family: serif;
+  }
+  
+.cover {
+    height: 100%;
+    width: 100%;
+    /* その要素を囲む親要素にdisplay: table;を指定 */
+    display: table;
+    background-image: url(/assets/top1.jpg);
+    /* 背景の透過 */
+    background-color:rgba(255,255,255,0.4);
+    /* 背景色と背景画像のブレンド方法を指定する　下レイヤー色と上レイヤー色のそれぞれのRGB値を比較して、よりRGB値の高い（明るい）色を採用する */
+    background-blend-mode:lighten;
+    /* 表示領域の幅100％ 高さ100％で表示（縦横比は無視） */
+    background-size: 100% 100%;
+  }
+  
+.text-center {
+    /* 横に並べたい要素にdisplay: table-cell;を指定 */
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  h1 {
+    font-family: Hiragino Sans;
+    color:gray
+  }
+  
+  .cover-new {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/newpage1.jpg);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+  }
+  
+  .form-label {
+    font-size: 20px;
+  }
+  
+  .form-group {
+    width: 600px;
+  }
+  
+  .cover-show {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/show.jpg);
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+  }
+  
+  #text {
+    font-size: 18px;
   }

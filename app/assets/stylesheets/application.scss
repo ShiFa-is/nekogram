@@ -30,7 +30,9 @@ body {
 
 header {
     display: flex;
-    background-color: black;
+    background-color: rgba(#EEEEEE,0.5);    
+    height: 50px;
+    align-items: center;
   }
   
   header div:first-child {
@@ -48,7 +50,6 @@ header {
   
   a:hover {
     text-decoration: none;
-    font-size: larger;
   }
   
   #logo {
@@ -67,7 +68,7 @@ header {
 }
 .underlay-photo {
   animation: hue-rotate 6s infinite;
-  background-image: url(/assets/training1.jpg);
+  background-image: url(/assets/show.jpg);
   background-size: cover;
   -webkit-filter: grayscale(30%);
   z-index: -1;
@@ -88,4 +89,80 @@ header {
 
 .profile-img {
   border-radius: 50%;
+}
+
+.main-content {
+  height: 2000px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-weight: normal;
+  margin-top: 50px;
+}
+
+.content p {
+  font-size: 35px;
+  margin-top: 30px;
+  text-decoration:underline;
+  text-decoration-color:#3399FF;
+  text-underline-offset: 0.2em;
+}
+
+.box {
+  display:flex;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-top: 35px;
+}
+
+.pict {
+  width: 100%;
+  text-align: center;
+  min-height: 0%;
+  margin-bottom: 15px;
+}
+
+.pict img {
+  max-width: 300px;
+  height:auto;
+  margin-top: 30px;
+}
+
+.last_message {
+  text-align: center;
+  padding: 50px 30px;
+  margin: 0 auto;
+  font-size: 35px;
+}
+
+.last_pict img {
+  max-width: 800px;
+  height:auto;
+}
+
+footer {
+  text-align: center;
 }

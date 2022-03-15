@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Training</title>
+    <title>Nekogram</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,14 +12,12 @@
 <body>
 <% if user_signed_in? %>
   <header>
-    <div><%= link_to root_path do %><img src="/assets/header.png" alt="logo" id="logo"><% end %></div>
-    <div><%= link_to "トップ", root_path, class: "text-white" %></div>
-    <div><%= link_to "投稿する", new_post_path, class: "text-white" %></div>
-    <div><%= link_to "投稿一覧", posts_path, class: "text-white" %></div>
-     <div><%= link_to "下書き一覧", confirm_posts_path, class: "text-white" %></div>
-    <div><%= link_to "マイページ", user_path(current_user.id), class: "text-white" %></div>
-    <div><%= link_to "ユーザー", users_path, class: "text-white" %></div>
-    <div><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "text-white" %></div>
+    <div><%= link_to root_path do %><img src="/assets/header1.png" alt="logo" id="logo"><% end %></div>
+    <div><%= link_to "トップ", root_path, class: "text-dark" %></div>
+    <div><%= link_to "投稿する", new_post_path, class: "text-dark" %></div>
+    <div><%= link_to "投稿一覧", posts_path, class: "text-dark" %></div>
+    <div><%= link_to "マイページ", user_path(current_user.id), class: "text-dark" %></div>
+    <div><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "text-dark" %></div>
   </header>
 <% end %>
   <%= yield %>

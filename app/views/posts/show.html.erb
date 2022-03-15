@@ -1,7 +1,7 @@
 <div class="cover-show">
   <div class="container">
     <div class="row justify-content-center">
-      <h1 class="font-weight-normal mt-3">TRAINING DETAIL</h1>
+      <h1 class="font-weight-normal mt-3">nekogram</h1>
     </div>
     <% if @comment.errors.any? %>
     <div class="card text-center card text-white bg-danger mb-3">
@@ -14,13 +14,13 @@
     <div class="d-flex">
       <div class="row justify-content-center d-block">
         <p class="caption"><%= @post.user_id %></p>
-      <%= attachment_image_tag @post, :image, format: 'jpeg', size: "450x350" %><br>
+      <%= attachment_image_tag @post, :image, format: 'jpeg', size: "320x320" %><br>
     <p class="caption"><%= @post.location %>
     <div id="favorite_btn_<%= @post.id %>">
     <%= render 'favorites/favorite', post: @post %>
     </div>
    </p>
-        <h2>MENU</h2>
+        <h2>コメント</h2>
         <p id="text"><%= @post.text %></p>
         <% if @post.user == current_user %>
         <%= link_to '編集する', edit_post_path(@post.id), class: "btn btn-info mr-3" %>

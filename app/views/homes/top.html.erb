@@ -1,7 +1,7 @@
 <div class="cover align-middle">
   <div class="text-center">
-    <p class="sub-title">〜継続は力なり〜</p>
-    <h1 class="title mb-2">TRAININGRAM</h1>
+    <p class="sub-title">〜猫と楽しむ〜</p>
+    <h1 class="title mb-2">nekogram</h1>
     <%= link_to new_user_registration_path do %>
      <h2 class="btn btn-primary mr-2">新規登録</h2>
     <% end %>
@@ -9,4 +9,54 @@
      <h2 class="btn btn-success ml-2">ログイン</h2>
     <% end %>
   </div>
+</div>
+
+<div class="main-wrapper">
+  <div class="main_content">
+  <!-- Catgram紹介文 -->
+    <div class="content">
+      <h2>nekogramは、世界中の猫好きが繋がるための掲示板サービスです</h2>
+      <p>nekogramについて</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="text">
+      <h3>我が家の自慢の子を紹介しよう</h3>
+      <p>「うちの猫を見て」「これはレアな瞬間」「こんな特技があるよ」など自慢の猫ちゃんを共有しましょう</p>
+    </div>
+    <div class="pict"><img src="/assets/message.jpg" alt="neko1"></div>
+  </div>
+
+  <div class="box">
+    <div class="text">
+      <h3>猫について語り合いましょう</h3>
+      <p>「猫好きと繋がりたい」「色んな猫ちゃんが見たい」など猫好きどうしで繋がりましょう</p>
+    </div>
+    <div class="pict"><img src="/assets/message2.jpg" alt="neko2"></div>
+  </div>
+
+  <div class="main_content">
+  <!-- Catgram紹介文 -->
+    <div class="content">
+      <p>nekogramの始め方</p>
+      <h4>アカウント登録して投稿するだけ！</h4>
+      <%= link_to new_user_registration_path do %>
+      <h2 class="btn btn-primary mr-2">今すぐ始める</h2>
+      <% end %>
+    </div>
+  </div>
+
+  <!--最後の言葉-->
+  <div class="last_message">
+      <p>素敵なCATLIFEをあなたに</p>
+      <div class="last_pict"><img src="/assets/last.jpg" alt="neko3"></div>
+  </div>
+
+  <footer>
+      <!--コピーライト-->
+      <div id="copyright">
+        Copyright &copy; 2022 nekogram All rights reserved.
+      </div>
+  </footer>
 </div>
